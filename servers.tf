@@ -18,7 +18,7 @@ resource "aws_instance" "frontend" {
   
 }
   resource "aws_route53_record" "frontend" {
-  zone_id = Z0505887K8AY7Z6S40DR
+  zone_id = "Z0505887K8AY7Z6S40DR"
   name    = "frontend-dev.devops1722.com"
   type    = "A"
   ttl     = 30
@@ -36,7 +36,7 @@ resource "aws_instance" "frontend" {
   }
   }
   resource "aws_route53_record" "cart" {
-  zone_id = Z0505887K8AY7Z6S40DR
+  zone_id = "Z0505887K8AY7Z6S40DR"
   name    = "cart-dev.devops1722.com"
   type    = "A"
   ttl     = 30
@@ -54,7 +54,7 @@ resource "aws_instance" "frontend" {
   }
   }
   resource "aws_route53_record" "mongodb" {
-  zone_id = Z0505887K8AY7Z6S40DR
+  zone_id = "Z0505887K8AY7Z6S40DR"
   name    = "mongodb-dev.devops1722.com"
   type    = "A"
   ttl     = 30
@@ -72,7 +72,7 @@ resource "aws_instance" "frontend" {
   }
   }
    resource "aws_route53_record" "catalogue" {
-  zone_id = Z0505887K8AY7Z6S40DR
+  zone_id = "Z0505887K8AY7Z6S40DR"
   name    = "catalogue-dev.devops1722.com"
   type    = "A"
   ttl     = 30
@@ -90,7 +90,7 @@ resource "aws_instance" "frontend" {
   }
   }
   resource "aws_route53_record" "redis" {
-  zone_id = Z0505887K8AY7Z6S40DR
+  zone_id = "Z0505887K8AY7Z6S40DR"
   name    = "redis-dev.devops1722.com"
   type    = "A"
   ttl     = 30
@@ -108,7 +108,7 @@ resource "aws_instance" "frontend" {
   }
   }
   resource "aws_route53_record" "user" {
-  zone_id = Z0505887K8AY7Z6S40DR
+  zone_id = "Z0505887K8AY7Z6S40DR"
   name    = "user-dev.devops1722.com"
   type    = "A"
   ttl     = 30
@@ -127,7 +127,7 @@ resource "aws_instance" "frontend" {
   }
   }
   resource "aws_route53_record" "mysql" {
-  zone_id = Z0505887K8AY7Z6S40DR
+  zone_id = "Z0505887K8AY7Z6S40DR"
   name    = "mysql-dev.devops1722.com"
   type    = "A"
   ttl     = 30
@@ -145,7 +145,7 @@ resource "aws_instance" "frontend" {
   }
   }
   resource "aws_route53_record" "shipping" {
-  zone_id = Z0505887K8AY7Z6S40DR
+  zone_id = "Z0505887K8AY7Z6S40DR"
   name    = "shipping-dev.devops1722.com"
   type    = "A"
   ttl     = 30
@@ -163,7 +163,7 @@ resource "aws_instance" "frontend" {
   }
   }
  resource "aws_route53_record" "rabbitmq" {
-  zone_id = Z0505887K8AY7Z6S40DR
+  zone_id = "Z0505887K8AY7Z6S40DR"
   name    = "rabbitmq-dev.devops1722.com"
   type    = "A"
   ttl     = 30
@@ -181,7 +181,7 @@ resource "aws_instance" "frontend" {
   }
   }
   resource "aws_route53_record" "payment" {
-  zone_id = Z0505887K8AY7Z6S40DR
+  zone_id = "Z0505887K8AY7Z6S40DR"
   name    = "payment-dev.devops1722.com"
   type    = "A"
   ttl     = 30
