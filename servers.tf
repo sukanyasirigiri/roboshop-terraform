@@ -16,7 +16,7 @@ resource "aws_instance" "frontend" {
   ami           = data.aws_ami.centos.image_id
 
   instance_type = var.instance_type
-vpc_security_group_ids =[data.aws_securty_group.allow-all.id]
+vpc_security_group_ids = [data.aws_securty_group.allow-all.id]
   tags = {
     Name = "frontend"
   }
@@ -35,7 +35,7 @@ vpc_security_group_ids =[data.aws_securty_group.allow-all.id]
   ami           = data.aws_ami.centos.image_id
 
   instance_type = var.instance_type
-vpc_security_group_ids =[data.aws_securty_group.allow-all.id]
+vpc_security_group_ids = [data.aws_securty_group.allow-all.id]
   tags = {
     Name = "cart"
   }
@@ -53,7 +53,7 @@ vpc_security_group_ids =[data.aws_securty_group.allow-all.id]
   ami           = data.aws_ami.centos.image_id
 
   instance_type = var.instance_type
-vpc_security_group_ids =[data.aws_securty_group.allow-all.id]
+vpc_security_group_ids = [data.aws_securty_group.allow-all.id]
   tags = {
     Name = "mongodb"
   }
@@ -71,7 +71,7 @@ vpc_security_group_ids =[data.aws_securty_group.allow-all.id]
   ami           = data.aws_ami.centos.image_id
 
   instance_type = var.instance_type
-vpc_security_group_ids =[data.aws_securty_group.allow-all.id]
+vpc_security_group_ids = [data.aws_securty_group.allow-all.id]
   tags = {
     Name = "catalogue"
   }
@@ -89,7 +89,7 @@ vpc_security_group_ids =[data.aws_securty_group.allow-all.id]
   ami           = data.aws_ami.centos.image_id
 
   instance_type = var.instance_type
-vpc_security_group_ids =[data.aws_securty_group.allow-all.id]
+vpc_security_group_ids = [data.aws_securty_group.allow-all.id]
   tags = {
     Name = "redis"
   }
@@ -107,7 +107,7 @@ vpc_security_group_ids =[data.aws_securty_group.allow-all.id]
   ami           = data.aws_ami.centos.image_id
 
   instance_type = var.instance_type
-vpc_security_group_ids =[data.aws_securty_group.allow-all.id]
+vpc_security_group_ids = [data.aws_securty_group.allow-all.id]
   tags = {
     Name = "user"
   }
@@ -126,7 +126,7 @@ vpc_security_group_ids =[data.aws_securty_group.allow-all.id]
   ami           = data.aws_ami.centos.image_id
 
   instance_type = var.instance_type
-vpc_security_group_ids =[data.aws_securty_group.allow-all.id]
+vpc_security_group_ids = [data.aws_securty_group.allow-all.id]
   tags = {
     Name = "mysql"
   }
@@ -144,7 +144,7 @@ vpc_security_group_ids =[data.aws_securty_group.allow-all.id]
   ami           = data.aws_ami.centos.image_id
 
   instance_type = var.instance_type
-vpc_security_group_ids =[data.aws_securty_group.allow-all.id]
+vpc_security_group_ids = [data.aws_securty_group.allow-all.id]
   tags = {
     Name = "shipping"
   }
@@ -162,7 +162,7 @@ vpc_security_group_ids =[data.aws_securty_group.allow-all.id]
   ami           = data.aws_ami.centos.image_id
 
   instance_type = var.instance_type
-vpc_security_group_ids =[data.aws_securty_group.allow-all.id]
+vpc_security_group_ids = [data.aws_securty_group.allow-all.id]
   tags = {
     Name = "rabbitmq"
   }
@@ -180,7 +180,7 @@ vpc_security_group_ids =[data.aws_securty_group.allow-all.id]
   ami           = data.aws_ami.centos.image_id
 
   instance_type = var.instance_type
-vpc_security_group_ids =[data.aws_securty_group.allow-all.id]
+vpc_security_group_ids = [data.aws_securty_group.allow-all.id]
   tags = {
     Name = "payment"
   }
