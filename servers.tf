@@ -72,13 +72,14 @@ vpc_security_group_ids = [ data.aws_security_group.allow-all.id ]
   }
   
 }
-  // resource "aws_route53_record" "frontend" {
-  // zone_id = "Z0505887K8AY7Z6S40DR"
-  // name    = "frontend-dev.devops1722.com"
-  // type    = "A"
-  // ttl     = 30
-  // records = [aws_instance.frontend.private_ip]
-//}
+  resource "aws_route53_record" "frontend" {
+    for_each = var.components
+   zone_id = "Z0505887K8AY7Z6S40DR"
+  name    = "${each.value["name"]}-dev.devops1722.com"
+   type    = "A"
+  ttl     = 30
+   records = [aws_instance.instance[each.value["name"]].private_ip]
+}
  
  
   
