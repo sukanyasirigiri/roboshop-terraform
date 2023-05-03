@@ -24,7 +24,7 @@ connection {
   
     inline = [
      "rm -rf roboshop-shell",
-      "gitclone https://github.com/raghudevopsb72/roboshop-shell.git",
+      "git clone https://github.com/sukanyasirigiri/roboshop-shell.git",
       "cd roboshop-shell",
       "sudo bash ${each.value["name"]}.sh"
     ]
