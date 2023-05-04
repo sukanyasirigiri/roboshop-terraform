@@ -26,18 +26,22 @@ frontend = {
   mysql = {
     name = "mysql"
     instance_type = "t3.small"
+    password = "Roboshop@1"
   }
   rabbitmq = {
     name = "rabbitmq"
     instance_type = "t3.small"
+    password = "roboshop123"
   }
   shipping = {
     name = "shipping"
     instance_type = "t3.medium"
+    password = "Roboshop@1"
   }
   payment = {
     name = "payment"
     instance_type = "t3.small"
+    password = "roboshop123"
   }
 }
 
