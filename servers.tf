@@ -10,8 +10,9 @@ vpc_security_group_ids = [ data.aws_security_group.allow-all.id ]
   }
 } 
 
-resource "null_resoure" "provisioner" {
-  depends_on = [ aws_instatnce.instance, aws_route53_record.revords ]
+resource "null_resource" "provisioner" {
+ 
+  depends_on = [ aws_instatnce.instance, aws_route53_record.records ]
 for_each = var.components
 provisioner "remote-exec" {
 
