@@ -11,6 +11,7 @@ vpc_security_group_ids = [ data.aws_security_group.allow-all.id ]
 } 
 
 resource "null_resource" "provisioner" {
+  count = var.provisioner ? 1 : 0
  
   depends_on = [aws_instance.instance, aws_route53_record.records]
 
