@@ -7,7 +7,8 @@ locals {
       "sudo bash ${var.component_name}.sh ${var.password}"
   ]
   app_commands = [
-    "sudo labauto ansible",
-    "ansible-pull -i localhost, -u https://github.com/sukanyasirigiri/roboshop-ansible.git -e env=${var.env} -e role_name=${var.component_name}"
+   # "sudo labauto ansible",
+    #"ansible-pull -i localhost, -u https://github.com/sukanyasirigiri/roboshop-ansible.git -e env=${var.env} -e role_name=${var.component_name}"
+    "echo ok"
   ]
 }
