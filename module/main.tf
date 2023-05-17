@@ -19,7 +19,6 @@ resource "null_resource" "provisioner" {
   }
 
  provisioner "remote-exec" {
-
    connection {
     type     = "ssh"
     user     = "centos"
