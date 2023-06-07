@@ -20,6 +20,7 @@ min_size = each.value["min_size"]
 
 env = var.env
 bastion_cidr = var.bastion_cidr
+tags = local.tags
 
 
 subnet_ids = lookup(lookup(lookup(lookup(module.vpc, "main", null), "subnets", null), each.value["subnet_name"], null), "subnet_ids", null)
