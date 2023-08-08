@@ -112,13 +112,13 @@ module "app" {
 depends_on = [module.vpc, module.docdb, module.rds, module.elasticache, module.rabbitmq, module.alb]    
 source = "git::https://github.com/sukanyasirigiri/tf-module-app.git"
 
-for_each = var.app
-instance_type = each.value["instance_type"]
-name      = each.value["name"]
-desired_capacity      = each.value["desired_capacity"]
-max_size    = each.value["max_size"]
-min_size = each.value["min_size"]
-app_port = each.value["app_port"]
+for_each          = var.app
+instance_type     = each.value["instance_type"]
+name              = each.value["name"]
+desired_capacity  = each.value["desired_capacity"]
+max_size          = each.value["max_size"]
+min_size          = each.value["min_size"]
+app_port          = each.value["app_port"]
 
 
 
