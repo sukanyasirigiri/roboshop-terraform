@@ -123,7 +123,7 @@ alb = {
     allow_alb_cidr = "null"
     internal = false
   }
-}      
+    
 
   private= {
     name = "private"
@@ -131,4 +131,4 @@ alb = {
     allow_alb_cidr = "web" 
     internal = true
   }
-     
+}
