@@ -130,3 +130,5 @@ bastion_cidr = var.bastion_cidr
 tags = local.tags
 
 }
+
+
