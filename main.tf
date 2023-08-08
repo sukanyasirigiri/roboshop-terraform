@@ -109,7 +109,7 @@ module "alb" {
 
 
 module "app" {
-depends_on = [module.vpc, module.docdb, module.rds, module.elasticache, module.rabbitm, module.alb]    
+depends_on = [module.vpc, module.docdb, module.rds, module.elasticache, module.rabbitmq, module.alb]    
 source = "git::https://github.com/sukanyasirigiri/tf-module-app.git"
 
 for_each = var.app
