@@ -4,6 +4,13 @@ default_vpc_id = "vpc-0824b5f71d9dd34a5"
 default_vpc_cidr = "172.31.0.0/16"
 default_vpc_rtid = "rtb-0f3bd229abc768edb"
 kms_arn = "arn:aws:kms:us-east-1:028562448764:key/b5f53787-daec-4270-a332-836e416b8bdb"
+domain_name = devops1722.com
+domain_id = Z0505887K8AY7Z6S40DR
+
+
+
+
+
 vpc = { 
   main = {
   cidr_block = "10.0.0.0/16"
@@ -43,7 +50,11 @@ frontend = {
   max_size           = 10
   min_size           = 1
   app_port = 80
+  listener_priority = 1
+  lb_type = "public"
 }
+
+
 catalogue = {
   name = "catalogue"
   instance_type = "t3.small"
@@ -53,6 +64,8 @@ catalogue = {
   max_size           = 10
   min_size           = 1
   app_port = 8080
+  listener_priority = 1
+  lb_type = "private"
 }
 #cart = {
  # name = "cart"
