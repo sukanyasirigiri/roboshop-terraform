@@ -120,6 +120,7 @@ max_size          = each.value["max_size"]
 min_size          = each.value["min_size"]
 app_port          = each.value["app_port"]
 listener_priority = each.value["listener_priority"]
+dns_name = lookup(var.app,"dns_name", "${each.value["name"]}-{var.env}")
 
 
 
